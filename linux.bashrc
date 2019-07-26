@@ -18,6 +18,7 @@ bind -m vi-insert "\C-l":clear-screen
 
 # aliases
 alias ls="ls -hN --color=auto --group-directories-first"
+alias lsa="ls -a -hN --color=auto --group-directories-first"
 alias t="touch"
 
 alias gs="git status"
