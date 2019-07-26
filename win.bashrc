@@ -1,14 +1,28 @@
-# jacek's .bashrc
+# jacek's .bashrc for win
 
 # enable vi mode in bash
 set -o vi
+
+
+# key binds
 bind -m vi-insert "\C-l":clear-screen
 
+
 # aliases
+alias ls="ls -hN --color=auto --group-directories-first"
+alias t="touch"
+
+alias gs="git status"
+alias ga="git add"
+alias gr="git rm"
+alias gc="git commit"
+alias gp="git push"
+alias reset="git reset"
+
 alias v="vim"
 alias V="vim"
 alias sv="sudo vim"
-alias ls='ls -hN --color=auto --group-directories-first'
+
 
 # prompt
 function prompt {
