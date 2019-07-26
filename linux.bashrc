@@ -32,6 +32,8 @@ alias v="vim"
 alias V="vim"
 alias sv="sudo vim"
 
+alias nb="jupyter notebook"
+
 alias info="screenfetch"
 
 
