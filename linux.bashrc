@@ -51,3 +51,6 @@ else
     else
         export PATH="/home/jacekplonowski/anaconda3/bin:$PATH"
     fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
