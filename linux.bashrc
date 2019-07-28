@@ -20,6 +20,7 @@ bind -m vi-insert "\C-l":clear-screen
 alias ls="ls -hN --color=auto --group-directories-first"
 alias lsa="ls -a -hN --color=auto --group-directories-first"
 alias t="touch"
+alias get="sudo yum install"
 
 alias gs="git status"
 alias ga="git add"
