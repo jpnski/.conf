@@ -20,6 +20,7 @@ alias ls="ls -hN --color=auto --group-directories-first"
 alias lsa="ls -a -hN --color=auto --group-directories-first"
 alias t="touch"
 alias get="sudo pacman -S"
+alias pget="sudo pip install"
 
 alias gs="git status"
 alias ga="git add"
