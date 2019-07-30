@@ -1,8 +1,0 @@
-[http]
-	sslBackend = openssl
-	sslCAInfo = D:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
-[credential]
-	helper = manager
-
-[core]
-editor = C:/Program Files/Vim/vim81/vim.exe
