@@ -3,6 +3,8 @@
 # autorun
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec bash ~/.fehbg
+exec compton
+exec redshift
 
 # basic definitions
 font pango:monospace 8
