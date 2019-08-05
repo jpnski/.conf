@@ -38,6 +38,7 @@ alias nb="jupyter notebook"
 alias info="screenfetch"
 
 alias ts="bash ~/.config/scripts/toggle_touch.sh"
+alias str="xrdb ~/st/.Xdefaults"
 
 #prompt
 PS1='\[\033[0;36m\]\u\[\033[0;37m\]@\[\033[0;36m\]\h \[\033[0;33m\]\W \[\033[0;37m\]\$ \[\033[0;37m\]'
