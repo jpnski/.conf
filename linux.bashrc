@@ -19,8 +19,10 @@ bind -m vi-insert "\C-l":clear-screen
 alias ls="ls -hN --color=auto --group-directories-first"
 alias lsa="ls -a -hN --color=auto --group-directories-first"
 alias t="touch"
+alias update="sudo pacman -Syu"
 alias get="sudo pacman -S"
 alias pget="sudo pip install"
+alias yeet="yay -S"
 
 alias gs="git status"
 alias ga="git add"
@@ -47,14 +49,14 @@ export PS1
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/jacekplonowski/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/jacek/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/jacekplonowski/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/jacekplonowski/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/jacek/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/jacek/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/jacekplonowski/anaconda3/bin:$PATH"
+        export PATH="/home/jacek/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
