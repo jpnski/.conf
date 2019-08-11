@@ -26,7 +26,7 @@ alias V="vim"
 alias sv="sudo vim"
 
 alias nb="jupyter notebook"
-
+alias python="winpty /d/Program\ Files\ \(x86\)/Python37-32/python.exe"
 
 # prompt
 PS1='\[\033[0;36m\]\u\[\033[0;37m\]@\[\033[0;36m\]\h \[\033[0;33m\]\W \[\033[0;37m\]\$ \[\033[0;37m\]'
