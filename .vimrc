@@ -47,16 +47,13 @@ Plug 'garbas/vim-snipmate'
 Plug 'mhinz/vim-signify'
 Plug 'fisadev/dragvisuals.vim'
 Plug 't9md/vim-choosewin'
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
 Plug 'lilydjwg/colorizer'
 Plug 'mileszs/ack.vim'
 if has('python')
-    " YAPF formatter for Python
     Plug 'pignacio/vim-yapf-format'
 endif
-" Relative numbering of lines (0 is the current line)
 Plug 'myusuf3/numbers.vim'
-
 Plug 'vim-scripts/IndexedSearch'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/Wombat'
@@ -297,7 +294,7 @@ let g:mkdp_refresh_slow = 1
 let g:mkdp_command_for_global = 0
 let g:mkdp_open_to_the_world = 0
 let g:mkdp_open_ip = ''
-let g:mkdp_browser = 'Chrome'
+let g:mkdp_browser = 'chromium'
 let g:mkdp_echo_preview_url = 0
 let g:mkdp_browserfunc = ''
 let g:mkdp_preview_options = {
@@ -310,7 +307,7 @@ let g:mkdp_preview_options = {
     \ 'hide_yaml_meta': 1
     \ }
 
-let g:mkdp_markdown_css = '/c/Users/jacek/.vim/github-markdown-css/github-markdown.css'
+let g:mkdp_markdown_css = ''
 let g:mkdp_highlight_css = ''
 let g:mkdp_port = ''
 let g:mkdp_page_title = '「${name}」'
