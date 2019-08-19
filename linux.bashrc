@@ -21,7 +21,6 @@ alias lsa="ls -a -hN --color=auto --group-directories-first"
 alias t="touch"
 alias update="sudo pacman -Syu"
 alias get="sudo pacman -S"
-alias pget="sudo pip install"
 alias yeet="yay -S"
 
 alias gs="git status"
@@ -37,7 +36,7 @@ alias V="vim"
 alias sv="sudo vim"
 alias R="R --quiet"
 alias nb="jupyter notebook"
-alias info="screenfetch"
+alias info="neofetch"
 
 alias ts="bash ~/.config/scripts/toggle_touch.sh"
 
