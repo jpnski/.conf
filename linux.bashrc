@@ -6,14 +6,11 @@ fi
 # set gio modules path for screenFetch
 export GIO_EXTRA_MODULES=/usr/lib64/gio/modules/
 
-
 # enable vi mode in bash
 set -o vi
 
-
 # key binds
 bind -m vi-insert "\C-l":clear-screen
-
 
 # aliases
 alias ls="ls -hN --color=auto --group-directories-first"
@@ -39,12 +36,13 @@ alias R="R --quiet"
 alias nb="jupyter notebook"
 alias info="neofetch"
 
+# script aliases
 alias ts="bash ~/.config/scripts/toggle_touch.sh"
+alias vpdf="bash ~/.config/scripts/browser_pdf_cli.sh"
 
-#prompt
+# prompt
 PS1='\[\033[0;36m\]\u\[\033[0;37m\]@\[\033[0;36m\]\h \[\033[0;33m\]\W \[\033[0;37m\]\$ \[\033[0;37m\]'
 export PS1
-
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
