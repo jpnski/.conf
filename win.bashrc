@@ -3,10 +3,8 @@
 # enable vi mode in bash
 set -o vi
 
-
 # key binds
 bind -m vi-insert "\C-l":clear-screen
-
 
 # aliases
 alias ls="ls -hN --color=auto --group-directories-first"
@@ -24,7 +22,6 @@ alias reset="git reset"
 alias v="vim"
 alias V="vim"
 alias sv="sudo vim"
-
 alias nb="jupyter notebook"
 alias python="winpty /d/Program\ Files\ \(x86\)/Python37-32/python.exe"
 
