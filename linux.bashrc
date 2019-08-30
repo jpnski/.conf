@@ -18,7 +18,7 @@ alias lsa="ls -a -hN --color=auto --group-directories-first"
 alias t="touch"
 alias update="sudo pacman -Syu"
 alias get="sudo pacman -S"
-alias pipget="sudu pip install"
+alias pipget="sudo pip install"
 alias yeet="yay -S"
 
 alias gs="git status"
