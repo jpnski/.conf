@@ -1,3 +1,5 @@
+" Based on fisadev's config
+
 " Vim-plug initialization
 
 let vim_plug_just_installed = 0
@@ -24,30 +26,17 @@ Plug 'godlygeek/tabular' | Plug 'plasticboy/vim-markdown'
 Plug 'arielrossanigo/dir-configs-override.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'majutsushi/tagbar'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'fisadev/vim-ctrlp-cmdpalette'
 Plug 'mattn/emmet-vim'
-Plug 'motemen/git-vim'
-Plug 'kien/tabman.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'fisadev/fisa-vim-colorscheme'
-Plug 'rosenfeld/conque-term'
 Plug 'fisadev/FixedTaskList.vim'
 Plug 'tpope/vim-surround'
 Plug 'Townk/vim-autoclose'
-Plug 'michaeljsmith/vim-indent-object'
-Plug 'jeetsukumaran/vim-indentwise'
-Plug 'Shougo/neocomplcache.vim'
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
-Plug 'honza/vim-snippets'
-Plug 'garbas/vim-snipmate'
 Plug 'mhinz/vim-signify'
-Plug 'fisadev/dragvisuals.vim'
 Plug 't9md/vim-choosewin'
-" Plug 'scrooloose/syntastic'
 Plug 'lilydjwg/colorizer'
 Plug 'mileszs/ack.vim'
 if has('python')
@@ -85,28 +74,6 @@ set incsearch
 set hlsearch
 syntax on
 set nu
-
-map tn :tabn<CR>
-map tp :tabp<CR>
-map tm :tabm 
-map tt :tabnew 
-map ts :tab split<CR>
-map <C-S-Right> :tabn<CR>
-imap <C-S-Right> <ESC>:tabn<CR>
-map <C-S-Left> :tabp<CR>
-imap <C-S-Left> <ESC>:tabp<CR>
-
-map <M-Right> <c-w>l
-map <M-Left> <c-w>h
-map <M-Up> <c-w>k
-map <M-Down> <c-w>j
-imap <M-Right> <ESC><c-w>l
-imap <M-Left> <ESC><c-w>h
-imap <M-Up> <ESC><c-w>k
-imap <M-Down> <ESC><c-w>j
-
-imap <C-J> <C-X><C-O>
-
 set completeopt-=preview
 ca w!! w !sudo tee "%"
 
@@ -126,7 +93,6 @@ endif
 
 set scrolloff=3
 set wildmode=list:longest
-
 set directory=~/.vim/dirs/tmp     " directory to place swap files in
 set backup                        " make backup files
 set backupdir=~/.vim/dirs/backups " where to put backup files
@@ -145,13 +111,6 @@ if !isdirectory(&undodir)
     call mkdir(&undodir, "p")
 endif
 
-" Tagbar ----------------------------- 
-
-" toggle tagbar display
-map <F4> :TagbarToggle<CR>
-" autofocus on tagbar open
-let g:tagbar_autofocus = 1
-
 " NERDTree ----------------------------- 
 
 " toggle nerdtree display
@@ -160,12 +119,6 @@ map <F3> :NERDTreeToggle<CR>
 nmap ,t :NERDTreeFind<CR>
 " don;t show these file types
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
-
-
-" Tasklist ------------------------------
-
-" show pending tasks list
-map <F2> :TaskList<CR>
 
 " CtrlP ------------------------------
 
@@ -202,41 +155,10 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\.pyc$\|\.pyo$',
   \ }
 
-" Syntastic ------------------------------
-
-" show list of errors and warnings on the current file
-nmap <leader>e :Errors<CR>
-" check also when just opened the file
-let g:syntastic_check_on_open = 1
-" don't put icons on the sign column (it hides the vcs status icons of signify)
-let g:syntastic_enable_signs = 0
-" custom icons (enable them if you use a patched font, and enable the previous 
-" setting)
-let g:syntastic_error_symbol = '✗'
-let g:syntastic_warning_symbol = '⚠'
-let g:syntastic_style_error_symbol = '✗'
-let g:syntastic_style_warning_symbol = '⚠'
-
-" TabMan ------------------------------
-
-" mappings to toggle display, and to focus on it
-let g:tabman_toggle = 'tl'
-let g:tabman_focus  = 'tf'
-
 " Autoclose ------------------------------
 
 " Fix to let ESC work as espected with Autoclose plugin
 let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
-
-" DragVisuals ------------------------------
-
-" mappings to move blocks in 4 directions
-vmap <expr> <S-M-LEFT> DVB_Drag('left')
-vmap <expr> <S-M-RIGHT> DVB_Drag('right')
-vmap <expr> <S-M-DOWN> DVB_Drag('down')
-vmap <expr> <S-M-UP> DVB_Drag('up')
-" mapping to duplicate block
-vmap <expr> D DVB_Duplicate()
 
 " Signify ------------------------------
 
