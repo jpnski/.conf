@@ -39,8 +39,9 @@ alias info="neofetch"
 # script aliases
 alias ts="bash ~/.config/scripts/toggle_touch.sh"
 alias vpdf="bash ~/.config/scripts/browser_pdf_cli.sh"
+alias mntsd="bash ~/.config/scripts/mntsd.sh"
 
-# prompt
+#prompt
 PS1='\[\033[0;36m\]\u\[\033[0;37m\]@\[\033[0;36m\]\h \[\033[0;33m\]\W \[\033[0;37m\]\$ \[\033[0;37m\]'
 export PS1
 
