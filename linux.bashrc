@@ -39,6 +39,9 @@ alias R="R --quiet"
 alias nb="jupyter notebook"
 alias info="neofetch"
 
+alias xclip="xclip -selection c"
+
+
 # script aliases
 alias ts="bash ~/.config/scripts/toggle_touch.sh"
 alias vpdf="bash ~/.config/scripts/browser_pdf_cli.sh"
