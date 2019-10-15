@@ -21,6 +21,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'christoomey/vim-system-copy'
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'godlygeek/tabular' | Plug 'plasticboy/vim-markdown'
 Plug 'arielrossanigo/dir-configs-override.vim'
@@ -57,6 +58,7 @@ endif
 
 " Vim settings and mappings
 
+set clipboard=unnamed
 set nocompatible
 filetype plugin on
 filetype indent on
