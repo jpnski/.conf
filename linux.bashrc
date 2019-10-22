@@ -1,4 +1,4 @@
-# jacek's .bashrc for linux
+# .bashrc for linux
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
@@ -21,8 +21,8 @@ alias lsa="ls -a -hN --color=auto --group-directories-first"
 alias t="touch"
 alias update="sudo pacman -Syu"
 alias get="sudo pacman -S"
-alias pipget="sudo pip install"
 alias yeet="sudo yay -S"
+alias tar="tar xfz"
 
 alias gs="git status"
 alias ga="git add"
@@ -38,9 +38,7 @@ alias sv="sudo vim"
 alias R="R --quiet"
 alias nb="jupyter notebook"
 alias info="neofetch"
-
 alias xclip="xclip -selection c"
-
 
 # script aliases
 alias ts="bash ~/.config/scripts/toggle_touch.sh"
