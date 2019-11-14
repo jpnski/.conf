@@ -21,6 +21,8 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'junegunn/goyo.vim'
+Plug 'lervag/vimtex'
 Plug 'christoomey/vim-system-copy'
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'godlygeek/tabular' | Plug 'plasticboy/vim-markdown'

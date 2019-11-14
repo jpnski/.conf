@@ -19,7 +19,7 @@ bind -m vi-insert "\C-l":clear-screen
 alias ls="ls -hN --color=auto --group-directories-first"
 alias lsa="ls -a -hN --color=auto --group-directories-first"
 alias t="touch"
-alias update="sudo pacman -Syu"
+alias update="yay"
 alias get="sudo pacman -S"
 alias yeet="sudo yay -S"
 alias tar="tar xfz"
@@ -41,6 +41,7 @@ alias info="neofetch"
 alias xclip="xclip -selection c"
 
 # script aliases
+alias pipupdate="bash ~/.config/scripts/pip_upgrade_all.sh"
 alias ts="bash ~/.config/scripts/toggle_touch.sh"
 alias vpdf="bash ~/.config/scripts/browser_pdf_cli.sh"
 alias mntsd="bash ~/.config/scripts/mntsd.sh"
