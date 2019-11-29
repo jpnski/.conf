@@ -45,7 +45,7 @@ alias pipupdate="bash ~/.config/scripts/pip_upgrade_all.sh"
 alias ts="bash ~/.config/scripts/toggle_touch.sh"
 alias vpdf="bash ~/.config/scripts/browser_pdf_cli.sh"
 alias mntsd="bash ~/.config/scripts/mntsd.sh"
-
+alias umntsd="sudo umount /mnt/SD"
 # prompt
 PS1='\[\033[0;36m\]\u\[\033[0;37m\]@\[\033[0;36m\]\h \[\033[0;33m\]\W \[\033[0;37m\]\$ \[\033[0;37m\]'
 export PS1
