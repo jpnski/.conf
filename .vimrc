@@ -126,13 +126,13 @@ map <F6> :LLPStartPreview<cr>
 
 map <F8> :Goyo<cr>
 
-" plasticboy/vim-markdown ------------------
+" vim-markdown ------------------
 
 autocmd FileType markdown let b:sleuth_automatic=0
 autocmd FileType markdown set conceallevel=0
 autocmd FileType markdown normal zR
 
-" iamcco/Markdown Preview ------------------
+" Markdown Preview ------------------
 
 let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1
