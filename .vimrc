@@ -1,5 +1,3 @@
-" Based on fisadev's config
-
 " Vim-plug initialization
 
 let vim_plug_just_installed = 0
@@ -21,6 +19,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 Plug 'junegunn/goyo.vim'
 Plug 'lervag/vimtex'
 Plug 'christoomey/vim-system-copy'
@@ -117,18 +116,23 @@ endif
 " ============================================================================
 " Plugin configuration
 
-" Goyo ---------------------------------
+" Latex Live Preview  ----------------------
 
-" toggle Goyo mode with F8 
+let g:livepreview_previewer = 'zathura'
+let g:livepreview_engine = 'xelatex'
+map <F6> :LLPStartPreview<cr>
+
+" Goyo -------------------------------------
+
 map <F8> :Goyo<cr>
 
-" plasticboy/vim-markdown ------------------------
+" plasticboy/vim-markdown ------------------
 
 autocmd FileType markdown let b:sleuth_automatic=0
 autocmd FileType markdown set conceallevel=0
 autocmd FileType markdown normal zR
 
-" iamcco/Markdown Preview -------------------------
+" iamcco/Markdown Preview ------------------
 
 let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1
@@ -136,7 +140,7 @@ let g:mkdp_refresh_slow = 1
 let g:mkdp_command_for_global = 0
 let g:mkdp_open_to_the_world = 0
 let g:mkdp_open_ip = ''
-let g:mkdp_browser = 'chromium'
+let g:mkdp_browser = 'google-chrome-stable'
 let g:mkdp_echo_preview_url = 0
 let g:mkdp_browserfunc = ''
 let g:mkdp_preview_options = {
@@ -154,29 +158,23 @@ let g:mkdp_highlight_css = ''
 let g:mkdp_port = ''
 let g:mkdp_page_title = '「${name}」'
 
-" NERDTree ----------------------------- 
+" NERDTree ---------------------------------
 
-" toggle nerdtree display
 map <F3> :NERDTreeToggle<CR>
-" open nerdtree with the current file selected
 nmap ,t :NERDTreeFind<CR>
-" don;t show these file types
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 
-" Autoclose ------------------------------
+" Autoclose --------------------------------
 
-" Fix to let ESC work as espected with Autoclose plugin
 let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
 
-" Signify ------------------------------
+" Signify ----------------------------------
 
-" this first setting decides in which order try to guess your current vcs
-" UPDATE it to reflect your preferences, it will speed up opening files
 let g:signify_vcs_list = [ 'git' ]
-" mappings to jump to changed blocks
+
 nmap <leader>sn <plug>(signify-next-hunk)
 nmap <leader>sp <plug>(signify-prev-hunk)
-" nicer colors
+
 highlight DiffAdd           cterm=bold ctermbg=none ctermfg=119
 highlight DiffDelete        cterm=bold ctermbg=none ctermfg=167
 highlight DiffChange        cterm=bold ctermbg=none ctermfg=227
@@ -184,7 +182,7 @@ highlight SignifySignAdd    cterm=bold ctermbg=237  ctermfg=119
 highlight SignifySignDelete cterm=bold ctermbg=237  ctermfg=167
 highlight SignifySignChange cterm=bold ctermbg=237  ctermfg=227
 
-" Airline ------------------------------
+" Airline ----------------------------------
 
 let g:airline_powerline_fonts = 0
 let g:airline_theme = 'bubblegum'
