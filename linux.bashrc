@@ -35,7 +35,7 @@ alias V="vim"
 alias sv="sudo vim"
 alias z="zathura"
 alias R="R --quiet"
-alias nb="jupyter notebook"
+alias nb="jupyter-notebook"
 alias info="neofetch"
 alias xclip="xclip -selection c"
 
