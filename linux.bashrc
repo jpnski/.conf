@@ -40,27 +40,10 @@ alias info="neofetch"
 alias xclip="xclip -selection c"
 
 # script aliases
-alias pipupdate="bash ~/.config/scripts/pip_upgrade_all.sh"
 alias ts="bash ~/.config/scripts/toggle_touch.sh"
-alias vpdf="bash ~/.config/scripts/browser_pdf_cli.sh"
 alias mntsd="bash ~/.config/scripts/mntsd.sh"
 alias umntsd="sudo umount /mnt/SD"
 
 # prompt
 PS1='\[\033[0;36m\]\u\[\033[0;37m\]@\[\033[0;36m\]\h \[\033[0;33m\]\W \[\033[0;37m\]\$ \[\033[0;37m\]'
 export PS1
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/jacek/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/jacek/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/jacek/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/jacek/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
