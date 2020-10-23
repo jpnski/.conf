@@ -1,4 +1,4 @@
-" Vim-plug initialization
+" vim-plug init
 
 let vim_plug_just_installed = 0
 let vim_plug_path = expand('~/.vim/autoload/plug.vim')
@@ -14,11 +14,12 @@ if vim_plug_just_installed
     :execute 'source '.fnameescape(vim_plug_path)
 endif
 
-" ============================================================================
-" Active plugins
+" ===================================================================
+" plugins
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'JuliaEditorSupport/julia-vim'
 Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 Plug 'junegunn/goyo.vim'
 Plug 'lervag/vimtex'
@@ -54,8 +55,8 @@ if vim_plug_just_installed
     :PlugInstall
 endif
 
-" ============================================================================
-" Vim settings and mappings
+" ===================================================================
+" vim settings and mappings
 
 set wrap
 set linebreak
@@ -113,8 +114,8 @@ if !isdirectory(&undodir)
     call mkdir(&undodir, "p")
 endif
 
-" ============================================================================
-" Plugin configuration
+" ===================================================================
+" plugin config
 
 " Latex Live Preview  ----------------------
 
@@ -200,4 +201,3 @@ let g:airline#extensions#whitespace#enabled = 0
 "let g:airline_symbols.branch = '⭠'
 "let g:airline_symbols.readonly = '⭤'
 "let g:airline_symbols.linenr = '⭡'
-
