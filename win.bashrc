@@ -1,5 +1,3 @@
-# jacek's .bashrc for win
-
 # enable vi mode in bash
 set -o vi
 
@@ -11,6 +9,7 @@ alias ls="ls -hN --color=auto --group-directories-first"
 alias lsa="ls -a -hN --color=auto --group-directories-first"
 alias t="touch"
 
+# git aliases
 alias gs="git status"
 alias ga="git add"
 alias gr="git rm"
@@ -27,4 +26,5 @@ alias python="winpty /d/Program\ Files\ \(x86\)/Python37-32/python.exe"
 
 # prompt
 PS1='\[\033[0;36m\]\u\[\033[0;37m\]@\[\033[0;36m\]\h \[\033[0;33m\]\W \[\033[0;37m\]\$ \[\033[0;37m\]'
+
 export PS1
